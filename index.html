@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Previsão de Preço por Quantidade com IA</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-card">
+        <h1>Previsão de Preço por Quantidade</h1>
+        <p>Informe uma quantidade de itens para a IA prever o preço total.</p>
+    
+        <input type="number" id="quantidade" placeholder="Ex: 5" min="0" step="1">
+        <button onclick="treinarEPrever()">Treinar e Prever</button>
+    
+        <h3 id="status">Status: Aguardando...</h3>
+        <h2 id="resultado"></h2>
+    </div>
+
+
+<script src="script.js"></script>
+</body>
+</html>
